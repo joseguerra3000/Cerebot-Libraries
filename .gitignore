@@ -19,3 +19,5 @@
 *.ini
 *.dic
 *mcp*.txt
+*.emcl
+*.*~
