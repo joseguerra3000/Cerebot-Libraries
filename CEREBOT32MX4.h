@@ -2,6 +2,8 @@
  * File         : CEREBOT32MX4.h
  * Project      : CEREBOT32MX4 Adapter
  * Revision History:
+		2017/6/2:
+			- Added constants
 		2017/5/20:
 			- initial release
 
@@ -12,81 +14,88 @@
  * 				facilitar el trabajo con la placa de desarrollo 
  * 				Diligent Cerebot32MX4 (con PIC32MX460F512L)
  */
+
+ //Some useful constants
+const char Cerebot_INPUT = 1,
+		   Cerebot_OUTPUT= 0,
+	       Cerebot_LOW = 0,
+		   Cerebot_HIGH = 1;
+ 
 /** PORT_JA REGISTERS MAPS **/
 //PORT->JA
-#define CEREBOT_PORTJA_01_bit RE0_bit
-#define CEREBOT_PORTJA_02_bit RE1_bit
-#define CEREBOt_PORTJA_03_bit RE2_bit
-#define CEREBOT_PORTJA_04_bit RE3_bit
-#define CEREBOT_PORTJA_07_bit RE4_bit
-#define CEREBOT_PORTJA_08_bit RE5_bit
-#define CEREBOT_PORTJA_09_bit RE6_bit
+#define CEREBOT_PORTJA_1_bit RE0_bit
+#define CEREBOT_PORTJA_2_bit RE1_bit
+#define CEREBOT_PORTJA_3_bit RE2_bit
+#define CEREBOT_PORTJA_4_bit RE3_bit
+#define CEREBOT_PORTJA_7_bit RE4_bit
+#define CEREBOT_PORTJA_8_bit RE5_bit
+#define CEREBOT_PORTJA_9_bit RE6_bit
 #define CEREBOT_PORTJA_10_bit RE7_bit
 //TRIS->JA
-#define CEREBOT_TRISJA_01_bit TRISE0_bit
-#define CEREBOT_TRISJA_02_bit TRISE1_bit
-#define CEREBOT_TRISJA_03_bit TRISE2_bit
-#define CEREBOT_TRISJA_04_bit TRISE3_bit
-#define CEREBOT_TRISJA_07_bit TRISE4_bit
-#define CEREBOT_TRISJA_08_bit TRISE5_bit
-#define CEREBOT_TRISJA_09_bit TRISE6_bit
+#define CEREBOT_TRISJA_1_bit TRISE0_bit
+#define CEREBOT_TRISJA_2_bit TRISE1_bit
+#define CEREBOT_TRISJA_3_bit TRISE2_bit
+#define CEREBOT_TRISJA_4_bit TRISE3_bit
+#define CEREBOT_TRISJA_7_bit TRISE4_bit
+#define CEREBOT_TRISJA_8_bit TRISE5_bit
+#define CEREBOT_TRISJA_9_bit TRISE6_bit
 #define CEREBOT_TRISJA_10_bit TRISE7_bit
 //LAT->JA
-#define CEREBOT_LATJA_01_bit LATE0_bit
-#define CEREBOT_LATJA_02_bit LATE1_bit
-#define CEREBOT_LATJA_03_bit LATE2_bit
-#define CEREBOT_LATJA_04_bit LATE3_bit
-#define CEREBOT_LATJA_07_bit LATE4_bit
-#define CEREBOT_LATJA_08_bit LATE5_bit
-#define CEREBOT_LATJA_09_bit LATE6_bit
+#define CEREBOT_LATJA_1_bit LATE0_bit
+#define CEREBOT_LATJA_2_bit LATE1_bit
+#define CEREBOT_LATJA_3_bit LATE2_bit
+#define CEREBOT_LATJA_4_bit LATE3_bit
+#define CEREBOT_LATJA_7_bit LATE4_bit
+#define CEREBOT_LATJA_8_bit LATE5_bit
+#define CEREBOT_LATJA_9_bit LATE6_bit
 #define CEREBOT_LATJA_10_bit LATE7_bit
 //ODC->JA
-#define CEREBOT_ODCJA_01_bit ODCE0_bit
-#define CEREBOT_ODCJA_02_bit ODCE1_bit
-#define CEREBOT_ODCJA_03_bit ODCE2_bit
-#define CEREBOT_ODCJA_04_bit ODCE3_bit
-#define CEREBOT_ODCJA_07_bit ODCE4_bit
-#define CEREBOT_ODCJA_08_bit ODCE5_bit
-#define CEREBOT_ODCJA_09_bit ODCE6_bit
+#define CEREBOT_ODCJA_1_bit ODCE0_bit
+#define CEREBOT_ODCJA_2_bit ODCE1_bit
+#define CEREBOT_ODCJA_3_bit ODCE2_bit
+#define CEREBOT_ODCJA_4_bit ODCE3_bit
+#define CEREBOT_ODCJA_7_bit ODCE4_bit
+#define CEREBOT_ODCJA_8_bit ODCE5_bit
+#define CEREBOT_ODCJA_9_bit ODCE6_bit
 #define CEREBOT_ODCJA_10_bit ODCE7_bit
 
 
 /** PORT_JB REGISTERS MAPS **/
 //PORT->JB
-#define CEREBOT_PORTJB_01_bit RG9_bit
-#define CEREBOT_PORTJB_02_bit RG8_bit
-#define CEREBOt_PORTJB_03_bit RG7_bit
-#define CEREBOT_PORTJB_04_bit RG6_bit
-#define CEREBOT_PORTJB_07_bit RB15_bit
-#define CEREBOT_PORTJB_08_bit RD5_bit
-#define CEREBOT_PORTJB_09_bit RD4_bit
+#define CEREBOT_PORTJB_1_bit RG9_bit
+#define CEREBOT_PORTJB_2_bit RG8_bit
+#define CEREBOT_PORTJB_3_bit RG7_bit
+#define CEREBOT_PORTJB_4_bit RG6_bit
+#define CEREBOT_PORTJB_7_bit RB15_bit
+#define CEREBOT_PORTJB_8_bit RD5_bit
+#define CEREBOT_PORTJB_9_bit RD4_bit
 #define CEREBOT_PORTJB_10_bit RB14_bit
 //TRIS->JB
-#define CEREBOT_TRISJB_01_bit TRISG9_bit
-#define CEREBOT_TRISJB_02_bit TRISG8_bit
-#define CEREBOT_TRISJB_03_bit TRISG7_bit
-#define CEREBOT_TRISJB_04_bit TRISG6_bit
-#define CEREBOT_TRISJB_07_bit TRISB15_bit	//AN15
-#define CEREBOT_TRISJB_08_bit TRISD5_bit
-#define CEREBOT_TRISJB_09_bit TRISD4_bit
+#define CEREBOT_TRISJB_1_bit TRISG9_bit
+#define CEREBOT_TRISJB_2_bit TRISG8_bit
+#define CEREBOT_TRISJB_3_bit TRISG7_bit
+#define CEREBOT_TRISJB_4_bit TRISG6_bit
+#define CEREBOT_TRISJB_7_bit TRISB15_bit	//AN15
+#define CEREBOT_TRISJB_8_bit TRISD5_bit
+#define CEREBOT_TRISJB_9_bit TRISD4_bit
 #define CEREBOT_TRISJB_10_bit TRISB14_bit	//AN14
 //LAT->JB
-#define CEREBOT_LATJB_01_bit LATG9_bit
-#define CEREBOT_LATJB_02_bit LATG8_bit
-#define CEREBOT_LATJB_03_bit LATG7_bit
-#define CEREBOT_LATJB_04_bit LATG6_bit
-#define CEREBOT_LATJB_07_bit LATB15_bit
-#define CEREBOT_LATJB_08_bit LATD5_bit
-#define CEREBOT_LATJB_09_bit LATD4_bit
+#define CEREBOT_LATJB_1_bit LATG9_bit
+#define CEREBOT_LATJB_2_bit LATG8_bit
+#define CEREBOT_LATJB_3_bit LATG7_bit
+#define CEREBOT_LATJB_4_bit LATG6_bit
+#define CEREBOT_LATJB_7_bit LATB15_bit
+#define CEREBOT_LATJB_8_bit LATD5_bit
+#define CEREBOT_LATJB_9_bit LATD4_bit
 #define CEREBOT_LATJB_10_bit LATB14_bit
 //ODC->JB
-#define CEREBOT_ODCJB_01_bit ODCG9_bit
-#define CEREBOT_ODCJB_02_bit ODCG8_bit
-#define CEREBOT_ODCJB_03_bit ODCG7_bit
-#define CEREBOT_ODCJB_04_bit ODCG6_bit
-#define CEREBOT_ODCJB_07_bit ODCB15_bit
-#define CEREBOT_ODCJB_08_bit ODCD5_bit
-#define CEREBOT_ODCJB_09_bit ODCD4_bit
+#define CEREBOT_ODCJB_1_bit ODCG9_bit
+#define CEREBOT_ODCJB_2_bit ODCG8_bit
+#define CEREBOT_ODCJB_3_bit ODCG7_bit
+#define CEREBOT_ODCJB_4_bit ODCG6_bit
+#define CEREBOT_ODCJB_7_bit ODCB15_bit
+#define CEREBOT_ODCJB_8_bit ODCD5_bit
+#define CEREBOT_ODCJB_9_bit ODCD4_bit
 #define CEREBOT_ODCJB_10_bit ODCB14_bit
 
 /** PORT_JC REGISTERS MAPS **/
@@ -102,256 +111,250 @@
   JC-10 --> Compartido con servo S8  
   */
 //PORT->JC
-#define CEREBOT_PORTJC_01_bit RG12_bit
-#define CEREBOT_PORTJC_02_bit RG13_bit
-#define CEREBOt_PORTJC_03_bit RG14_bit
-#define CEREBOT_PORTJC_04_bit RG15_bit
-#define CEREBOT_PORTJC_07_bit RG0_bit
-#define CEREBOT_PORTJC_08_bit RG1_bit
-#define CEREBOT_PORTJC_09_bit RF0_bit
+#define CEREBOT_PORTJC_1_bit RG12_bit
+#define CEREBOT_PORTJC_2_bit RG13_bit
+#define CEREBOT_PORTJC_3_bit RG14_bit
+#define CEREBOT_PORTJC_4_bit RG15_bit
+#define CEREBOT_PORTJC_7_bit RG0_bit
+#define CEREBOT_PORTJC_8_bit RG1_bit
+#define CEREBOT_PORTJC_9_bit RF0_bit
 #define CEREBOT_PORTJC_10_bit RF1_bit
 //TRIS->JC
-#define CEREBOT_TRISJC_01_bit TRISG12_bit
-#define CEREBOT_TRISJC_02_bit TRISG13_bit
-#define CEREBOT_TRISJC_03_bit TRISG14_bit
-#define CEREBOT_TRISJC_04_bit TRISG15_bit
-#define CEREBOT_TRISJC_07_bit TRISG0_bit
-#define CEREBOT_TRISJC_08_bit TRISG1_bit
-#define CEREBOT_TRISJC_09_bit TRISF0_bit
+#define CEREBOT_TRISJC_1_bit TRISG12_bit
+#define CEREBOT_TRISJC_2_bit TRISG13_bit
+#define CEREBOT_TRISJC_3_bit TRISG14_bit
+#define CEREBOT_TRISJC_4_bit TRISG15_bit
+#define CEREBOT_TRISJC_7_bit TRISG0_bit
+#define CEREBOT_TRISJC_8_bit TRISG1_bit
+#define CEREBOT_TRISJC_9_bit TRISF0_bit
 #define CEREBOT_TRISJC_10_bit TRISF1_bit
 //LAT->JC
-#define CEREBOT_LATJC_01_bit LATG12_bit
-#define CEREBOT_LATJC_02_bit LATG13_bit
-#define CEREBOT_LATJC_03_bit LATG14_bit
-#define CEREBOT_LATJC_04_bit LATG15_bit
-#define CEREBOT_LATJC_07_bit LATG0_bit
-#define CEREBOT_LATJC_08_bit LATG1_bit
-#define CEREBOT_LATJC_09_bit LATF0_bit
+#define CEREBOT_LATJC_1_bit LATG12_bit
+#define CEREBOT_LATJC_2_bit LATG13_bit
+#define CEREBOT_LATJC_3_bit LATG14_bit
+#define CEREBOT_LATJC_4_bit LATG15_bit
+#define CEREBOT_LATJC_7_bit LATG0_bit
+#define CEREBOT_LATJC_8_bit LATG1_bit
+#define CEREBOT_LATJC_9_bit LATF0_bit
 #define CEREBOT_LATJC_10_bit LATF1_bit
 //ODC->JC
-#define CEREBOT_ODCJC_01_bit ODCG12_bit
-#define CEREBOT_ODCJC_02_bit ODCG13_bit
-#define CEREBOT_ODCJC_03_bit ODCG14_bit
-#define CEREBOT_ODCJC_04_bit ODCG15_bit
-#define CEREBOT_ODCJC_07_bit ODCG0_bit
-#define CEREBOT_ODCJC_08_bit ODCG1_bit
-#define CEREBOT_ODCJC_09_bit ODCF0_bit
+#define CEREBOT_ODCJC_1_bit ODCG12_bit
+#define CEREBOT_ODCJC_2_bit ODCG13_bit
+#define CEREBOT_ODCJC_3_bit ODCG14_bit
+#define CEREBOT_ODCJC_4_bit ODCG15_bit
+#define CEREBOT_ODCJC_7_bit ODCG0_bit
+#define CEREBOT_ODCJC_8_bit ODCG1_bit
+#define CEREBOT_ODCJC_9_bit ODCF0_bit
 #define CEREBOT_ODCJC_10_bit ODCF1_bit
 
 /** PORT_JD REGISTERS MAPS **/
 //PORT->JD
-#define CEREBOT_PORTJD_01_bit RD7_bit
-#define CEREBOT_PORTJD_02_bit RD1_bit
-#define CEREBOt_PORTJD_03_bit RD9_bit 	//Shared with SPI Port1 Connector,J1
-#define CEREBOT_PORTJD_04_bit RC1_bit
-#define CEREBOT_PORTJD_07_bit RD6_bit
-#define CEREBOT_PORTJD_08_bit RD2_bit
-#define CEREBOT_PORTJD_09_bit RD10_bit	//Shared with SPI Port1 Connector,J1
+#define CEREBOT_PORTJD_1_bit RD7_bit
+#define CEREBOT_PORTJD_2_bit RD1_bit
+#define CEREBOT_PORTJD_3_bit RD9_bit 	//Shared with SPI Port1 Connector,J1
+#define CEREBOT_PORTJD_4_bit RC1_bit
+#define CEREBOT_PORTJD_7_bit RD6_bit
+#define CEREBOT_PORTJD_8_bit RD2_bit
+#define CEREBOT_PORTJD_9_bit RD10_bit	//Shared with SPI Port1 Connector,J1
 #define CEREBOT_PORTJD_10_bit RC2_bit
 //TRIS->JD
-#define CEREBOT_TRISJD_01_bit TRISD7_bit
-#define CEREBOT_TRISJD_02_bit TRISD1_bit
-#define CEREBOT_TRISJD_03_bit TRISD9_bit
-#define CEREBOT_TRISJD_04_bit TRISC1_bit
-#define CEREBOT_TRISJD_07_bit TRISD6_bit
-#define CEREBOT_TRISJD_08_bit TRISD2_bit
-#define CEREBOT_TRISJD_09_bit TRISD10_bit
+#define CEREBOT_TRISJD_1_bit TRISD7_bit
+#define CEREBOT_TRISJD_2_bit TRISD1_bit
+#define CEREBOT_TRISJD_3_bit TRISD9_bit
+#define CEREBOT_TRISJD_4_bit TRISC1_bit
+#define CEREBOT_TRISJD_7_bit TRISD6_bit
+#define CEREBOT_TRISJD_8_bit TRISD2_bit
+#define CEREBOT_TRISJD_9_bit TRISD10_bit
 #define CEREBOT_TRISJD_10_bit TRISC2_bit
 //LAT->JD
-#define CEREBOT_LATJD_01_bit LATD7_bit
-#define CEREBOT_LATJD_02_bit LATD1_bit
-#define CEREBOT_LATJD_03_bit LATD9_bit
-#define CEREBOT_LATJD_04_bit LATC1_bit
-#define CEREBOT_LATJD_07_bit LATD6_bit
-#define CEREBOT_LATJD_08_bit LATD2_bit
-#define CEREBOT_LATJD_09_bit LATD10_bit
+#define CEREBOT_LATJD_1_bit LATD7_bit
+#define CEREBOT_LATJD_2_bit LATD1_bit
+#define CEREBOT_LATJD_3_bit LATD9_bit
+#define CEREBOT_LATJD_4_bit LATC1_bit
+#define CEREBOT_LATJD_7_bit LATD6_bit
+#define CEREBOT_LATJD_8_bit LATD2_bit
+#define CEREBOT_LATJD_9_bit LATD10_bit
 #define CEREBOT_LATJD_10_bit LATC2_bit
 //ODC->JD
-#define CEREBOT_ODCJD_01_bit ODCD7_bit
-#define CEREBOT_ODCJD_02_bit ODCD1_bit
-#define CEREBOT_ODCJD_03_bit ODCD9_bit
-#define CEREBOT_ODCJD_04_bit ODCC1_bit
-#define CEREBOT_ODCJD_07_bit ODCD6_bit
-#define CEREBOT_ODCJD_08_bit ODCD2_bit
-#define CEREBOT_ODCJD_09_bit ODCD10_bit
+#define CEREBOT_ODCJD_1_bit ODCD7_bit
+#define CEREBOT_ODCJD_2_bit ODCD1_bit
+#define CEREBOT_ODCJD_3_bit ODCD9_bit
+#define CEREBOT_ODCJD_4_bit ODCC1_bit
+#define CEREBOT_ODCJD_7_bit ODCD6_bit
+#define CEREBOT_ODCJD_8_bit ODCD2_bit
+#define CEREBOT_ODCJD_9_bit ODCD10_bit
 #define CEREBOT_ODCJD_10_bit ODCC2_bit
 
 /** PORT_JE REGISTERS MAPS **/
 //PORT->JE
-#define CEREBOT_PORTJE_01_bit RD14_bit
-#define CEREBOT_PORTJE_02_bit RD15_bit
-#define CEREBOt_PORTJE_03_bit RF2_bit
-#define CEREBOT_PORTJE_04_bit RF8_bit
-#define CEREBOT_PORTJE_07_bit RD13_bit
-#define CEREBOT_PORTJE_08_bit RD3_bit
-#define CEREBOT_PORTJE_09_bit RD11_bit
+#define CEREBOT_PORTJE_1_bit RD14_bit
+#define CEREBOT_PORTJE_2_bit RD15_bit
+#define CEREBOT_PORTJE_3_bit RF2_bit
+#define CEREBOT_PORTJE_4_bit RF8_bit
+#define CEREBOT_PORTJE_7_bit RD13_bit
+#define CEREBOT_PORTJE_8_bit RD3_bit
+#define CEREBOT_PORTJE_9_bit RD11_bit
 #define CEREBOT_PORTJE_10_bit RC3_bit
 //TRIS->JE
-#define CEREBOT_TRISJE_01_bit TRISD14_bit
-#define CEREBOT_TRISJE_02_bit TRISD15_bit
-#define CEREBOT_TRISJE_03_bit TRISF2_bit
-#define CEREBOT_TRISJE_04_bit TRISF8_bit
-#define CEREBOT_TRISJE_07_bit TRISD13_bit
-#define CEREBOT_TRISJE_08_bit TRISD3_bit
-#define CEREBOT_TRISJE_09_bit TRISD11_bit
+#define CEREBOT_TRISJE_1_bit TRISD14_bit
+#define CEREBOT_TRISJE_2_bit TRISD15_bit
+#define CEREBOT_TRISJE_3_bit TRISF2_bit
+#define CEREBOT_TRISJE_4_bit TRISF8_bit
+#define CEREBOT_TRISJE_7_bit TRISD13_bit
+#define CEREBOT_TRISJE_8_bit TRISD3_bit
+#define CEREBOT_TRISJE_9_bit TRISD11_bit
 #define CEREBOT_TRISJE_10_bit TRISC3_bit
 //LAT->JE
-#define CEREBOT_LATJE_01_bit LATD14_bit
-#define CEREBOT_LATJE_02_bit LATD15_bit
-#define CEREBOT_LATJE_03_bit LATF2_bit
-#define CEREBOT_LATJE_04_bit LATF8_bit
-#define CEREBOT_LATJE_07_bit LATD13_bit
-#define CEREBOT_LATJE_08_bit LATD3_bit
-#define CEREBOT_LATJE_09_bit LATD11_bit
+#define CEREBOT_LATJE_1_bit LATD14_bit
+#define CEREBOT_LATJE_2_bit LATD15_bit
+#define CEREBOT_LATJE_3_bit LATF2_bit
+#define CEREBOT_LATJE_4_bit LATF8_bit
+#define CEREBOT_LATJE_7_bit LATD13_bit
+#define CEREBOT_LATJE_8_bit LATD3_bit
+#define CEREBOT_LATJE_9_bit LATD11_bit
 #define CEREBOT_LATJE_10_bit LATC3_bit
 //ODC->JE
-#define CEREBOT_ODCJE_01_bit ODCD14_bit
-#define CEREBOT_ODCJE_02_bit ODCD15_bit
-#define CEREBOT_ODCJE_03_bit ODCF2_bit
-#define CEREBOT_ODCJE_04_bit ODCF8_bit
-#define CEREBOT_ODCJE_07_bit ODCD13_bit
-#define CEREBOT_ODCJE_08_bit ODCD3_bit
-#define CEREBOT_ODCJE_09_bit ODCD11_bit
+#define CEREBOT_ODCJE_1_bit ODCD14_bit
+#define CEREBOT_ODCJE_2_bit ODCD15_bit
+#define CEREBOT_ODCJE_3_bit ODCF2_bit
+#define CEREBOT_ODCJE_4_bit ODCF8_bit
+#define CEREBOT_ODCJE_7_bit ODCD13_bit
+#define CEREBOT_ODCJE_8_bit ODCD3_bit
+#define CEREBOT_ODCJE_9_bit ODCD11_bit
 #define CEREBOT_ODCJE_10_bit ODCC3_bit
 
 /** PORT_JF REGISTERS MAPS **/
 //PORT->JF
-#define CEREBOT_PORTJF_01_bit RA2_bit	//Shared with I2C daisy chain #2,J6
-#define CEREBOT_PORTJF_02_bit RA3_bit	//Shared with I2C daisy chain #2,J6
-#define CEREBOt_PORTJF_03_bit RA6_bit	//Shared with BTN1
-#define CEREBOT_PORTJF_04_bit RA7_bit	//Shared with BTN2
+#define CEREBOT_PORTJF_1_bit RA2_bit	//Shared with I2C daisy chain #2,J6
+#define CEREBOT_PORTJF_2_bit RA3_bit	//Shared with I2C daisy chain #2,J6
+#define CEREBOT_PORTJF_3_bit RA6_bit	//Shared with BTN1
+#define CEREBOT_PORTJF_4_bit RA7_bit	//Shared with BTN2
 //TRIS->JF
-#define CEREBOT_TRISJF_01_bit TRISA2_bit
-#define CEREBOT_TRISJF_02_bit TRISA3_bit
-#define CEREBOT_TRISJF_03_bit TRISA6_bit
-#define CEREBOT_TRISJF_04_bit TRISA7_bit
+#define CEREBOT_TRISJF_1_bit TRISA2_bit
+#define CEREBOT_TRISJF_2_bit TRISA3_bit
+#define CEREBOT_TRISJF_3_bit TRISA6_bit
+#define CEREBOT_TRISJF_4_bit TRISA7_bit
 //LAT->JF
-#define CEREBOT_LATJF_01_bit LATA2_bit
-#define CEREBOT_LATJF_02_bit LATA3_bit
-#define CEREBOT_LATJF_03_bit LATA6_bit
-#define CEREBOT_LATJF_04_bit LATA7_bit
+#define CEREBOT_LATJF_1_bit LATA2_bit
+#define CEREBOT_LATJF_2_bit LATA3_bit
+#define CEREBOT_LATJF_3_bit LATA6_bit
+#define CEREBOT_LATJF_4_bit LATA7_bit
 //ODC->JF
-#define CEREBOT_ODCJF_01_bit ODCA2_bit
-#define CEREBOT_ODCJF_02_bit ODCA3_bit
-#define CEREBOT_ODCJF_03_bit ODCA6_bit
-#define CEREBOT_ODCJF_04_bit ODCA7_bit
+#define CEREBOT_ODCJF_1_bit ODCA2_bit
+#define CEREBOT_ODCJF_2_bit ODCA3_bit
+#define CEREBOT_ODCJF_3_bit ODCA6_bit
+#define CEREBOT_ODCJF_4_bit ODCA7_bit
 
 /** PORT_JH REGISTERS MAPS **/
 //PORT->JH
-#define CEREBOT_PORTJH_01_bit RF12_bit
-#define CEREBOT_PORTJH_02_bit RF13_bit
-#define CEREBOt_PORTJH_03_bit RF4_bit
-#define CEREBOT_PORTJH_04_bit RF5_bit
-#define CEREBOT_PORTJH_07_bit RE8_bit
-#define CEREBOT_PORTJH_08_bit RD0_bit	//Shared with SPI Port1 Connector,J1
-#define CEREBOT_PORTJH_09_bit RD8_bit
+#define CEREBOT_PORTJH_1_bit RF12_bit
+#define CEREBOT_PORTJH_2_bit RF13_bit
+#define CEREBOT_PORTJH_3_bit RF4_bit
+#define CEREBOT_PORTJH_4_bit RF5_bit
+#define CEREBOT_PORTJH_7_bit RE8_bit
+#define CEREBOT_PORTJH_8_bit RD0_bit	//Shared with SPI Port1 Connector,J1
+#define CEREBOT_PORTJH_9_bit RD8_bit
 #define CEREBOT_PORTJH_10_bit RE9_bit	//Shared with USB OC_SENSE via JP5
 //TRIS->JH
-#define CEREBOT_TRISJH_01_bit TRISF12_bit
-#define CEREBOT_TRISJH_02_bit TRISF13_bit
-#define CEREBOT_TRISJH_03_bit TRISF4_bit
-#define CEREBOT_TRISJH_04_bit TRISF5_bit
-#define CEREBOT_TRISJH_07_bit TRISE8_bit
-#define CEREBOT_TRISJH_08_bit TRISD0_bit
-#define CEREBOT_TRISJH_09_bit TRISD8_bit
+#define CEREBOT_TRISJH_1_bit TRISF12_bit
+#define CEREBOT_TRISJH_2_bit TRISF13_bit
+#define CEREBOT_TRISJH_3_bit TRISF4_bit
+#define CEREBOT_TRISJH_4_bit TRISF5_bit
+#define CEREBOT_TRISJH_7_bit TRISE8_bit
+#define CEREBOT_TRISJH_8_bit TRISD0_bit
+#define CEREBOT_TRISJH_9_bit TRISD8_bit
 #define CEREBOT_TRISJH_10_bit TRISE9_bit
 //LAT->JH
-#define CEREBOT_LATJH_01_bit LATF12_bit
-#define CEREBOT_LATJH_02_bit LATF13_bit
-#define CEREBOT_LATJH_03_bit LATF4_bit
-#define CEREBOT_LATJH_04_bit LATF5_bit
-#define CEREBOT_LATJH_07_bit LATE8_bit
-#define CEREBOT_LATJH_08_bit LATD0_bit
-#define CEREBOT_LATJH_09_bit LATD8_bit
+#define CEREBOT_LATJH_1_bit LATF12_bit
+#define CEREBOT_LATJH_2_bit LATF13_bit
+#define CEREBOT_LATJH_3_bit LATF4_bit
+#define CEREBOT_LATJH_4_bit LATF5_bit
+#define CEREBOT_LATJH_7_bit LATE8_bit
+#define CEREBOT_LATJH_8_bit LATD0_bit
+#define CEREBOT_LATJH_9_bit LATD8_bit
 #define CEREBOT_LATJH_10_bit LATE9_bit
 //ODC->JH
-#define CEREBOT_ODCJH_01_bit ODCF12_bit
-#define CEREBOT_ODCJH_02_bit ODCF13_bit
-#define CEREBOT_ODCJH_03_bit ODCF4_bit
-#define CEREBOT_ODCJH_04_bit ODCF5_bit
-#define CEREBOT_ODCJH_07_bit ODCE8_bit
-#define CEREBOT_ODCJH_08_bit ODCD0_bit
-#define CEREBOT_ODCJH_09_bit ODCD8_bit
+#define CEREBOT_ODCJH_1_bit ODCF12_bit
+#define CEREBOT_ODCJH_2_bit ODCF13_bit
+#define CEREBOT_ODCJH_3_bit ODCF4_bit
+#define CEREBOT_ODCJH_4_bit ODCF5_bit
+#define CEREBOT_ODCJH_7_bit ODCE8_bit
+#define CEREBOT_ODCJH_8_bit ODCD0_bit
+#define CEREBOT_ODCJH_9_bit ODCD8_bit
 #define CEREBOT_ODCJH_10_bit ODCE9_bit
 
 /** PORT_JJ REGISTERS MAPS **/
 //PORT->JJ
-#define CEREBOT_PORTJJ_01_bit RB0_bit	//AN0
-#define CEREBOT_PORTJJ_02_bit RB1_bit	//AN1
-#define CEREBOt_PORTJJ_03_bit RB2_bit	//AN2
-#define CEREBOT_PORTJJ_04_bit RB3_bit	//AN3
-#define CEREBOT_PORTJJ_07_bit RB4_bit	//AN4
-#define CEREBOT_PORTJJ_08_bit RB5_bit	//AN5//Selected by J16
-#define CEREBOT_PORTJJ_09_bit RB8_bit	//AN8
+#define CEREBOT_PORTJJ_1_bit RB0_bit	//AN0
+#define CEREBOT_PORTJJ_2_bit RB1_bit	//AN1
+#define CEREBOT_PORTJJ_3_bit RB2_bit	//AN2
+#define CEREBOT_PORTJJ_4_bit RB3_bit	//AN3
+#define CEREBOT_PORTJJ_7_bit RB4_bit	//AN4
+#define CEREBOT_PORTJJ_8_bit RB5_bit	//AN5//Selected by J16
+#define CEREBOT_PORTJJ_9_bit RB8_bit	//AN8
 #define CEREBOT_PORTJJ_10_bit RB9_bit	//AN9
 //TRIS->JJ
-#define CEREBOT_TRISJJ_01_bit TRISB0_bit
-#define CEREBOT_TRISJJ_02_bit TRISB1_bit
-#define CEREBOT_TRISJJ_03_bit TRISB2_bit
-#define CEREBOT_TRISJJ_04_bit TRISB3_bit
-#define CEREBOT_TRISJJ_07_bit TRISB4_bit
-#define CEREBOT_TRISJJ_08_bit TRISB5_bit
-#define CEREBOT_TRISJJ_09_bit TRISB8_bit
+#define CEREBOT_TRISJJ_1_bit TRISB0_bit
+#define CEREBOT_TRISJJ_2_bit TRISB1_bit
+#define CEREBOT_TRISJJ_3_bit TRISB2_bit
+#define CEREBOT_TRISJJ_4_bit TRISB3_bit
+#define CEREBOT_TRISJJ_7_bit TRISB4_bit
+#define CEREBOT_TRISJJ_8_bit TRISB5_bit
+#define CEREBOT_TRISJJ_9_bit TRISB8_bit
 #define CEREBOT_TRISJJ_10_bit TRISB9_bit
 //LAT->JJ
-#define CEREBOT_LATJJ_01_bit LATB0_bit
-#define CEREBOT_LATJJ_02_bit LATB1_bit
-#define CEREBOT_LATJJ_03_bit LATB2_bit
-#define CEREBOT_LATJJ_04_bit LATB3_bit
-#define CEREBOT_LATJJ_07_bit LATB4_bit
-#define CEREBOT_LATJJ_08_bit LATB5_bit
-#define CEREBOT_LATJJ_09_bit LATB8_bit
+#define CEREBOT_LATJJ_1_bit LATB0_bit
+#define CEREBOT_LATJJ_2_bit LATB1_bit
+#define CEREBOT_LATJJ_3_bit LATB2_bit
+#define CEREBOT_LATJJ_4_bit LATB3_bit
+#define CEREBOT_LATJJ_7_bit LATB4_bit
+#define CEREBOT_LATJJ_8_bit LATB5_bit
+#define CEREBOT_LATJJ_9_bit LATB8_bit
 #define CEREBOT_LATJJ_10_bit LATB9_bit
 //ODC->JJ
-#define CEREBOT_ODCJJ_01_bit ODCB0_bit
-#define CEREBOT_ODCJJ_02_bit ODCB1_bit
-#define CEREBOT_ODCJJ_03_bit ODCB2_bit
-#define CEREBOT_ODCJJ_04_bit ODCB3_bit
-#define CEREBOT_ODCJJ_07_bit ODCB4_bit
-#define CEREBOT_ODCJJ_08_bit ODCB5_bit
-#define CEREBOT_ODCJJ_09_bit ODCB8_bit
+#define CEREBOT_ODCJJ_1_bit ODCB0_bit
+#define CEREBOT_ODCJJ_2_bit ODCB1_bit
+#define CEREBOT_ODCJJ_3_bit ODCB2_bit
+#define CEREBOT_ODCJJ_4_bit ODCB3_bit
+#define CEREBOT_ODCJJ_7_bit ODCB4_bit
+#define CEREBOT_ODCJJ_8_bit ODCB5_bit
+#define CEREBOT_ODCJJ_9_bit ODCB8_bit
 #define CEREBOT_ODCJJ_10_bit ODCB9_bit
 
 /** PORT_JK REGISTERS MAPS **/
 //PORT->JK
-#define CEREBOT_PORTJK_01_bit RB10_bit	//AN10//Shared with LED1
-#define CEREBOT_PORTJK_02_bit RB11_bit	//AN11//Shared with LED2
-#define CEREBOt_PORTJK_03_bit RB12_bit	//AN12//Shared with LED3
-#define CEREBOT_PORTJK_04_bit RB13_bit	//AN13//Shared with LED4
-#define CEREBOT_PORTJK_07_bit RA9_bit
-#define CEREBOT_PORTJK_08_bit RA10_bit
-#define CEREBOT_PORTJK_09_bit RD12_bit
+#define CEREBOT_PORTJK_1_bit RB10_bit	//AN10//Shared with LED1
+#define CEREBOT_PORTJK_2_bit RB11_bit	//AN11//Shared with LED2
+#define CEREBOT_PORTJK_3_bit RB12_bit	//AN12//Shared with LED3
+#define CEREBOT_PORTJK_4_bit RB13_bit	//AN13//Shared with LED4
+#define CEREBOT_PORTJK_7_bit RA9_bit
+#define CEREBOT_PORTJK_8_bit RA10_bit
+#define CEREBOT_PORTJK_9_bit RD12_bit
 #define CEREBOT_PORTJK_10_bit RC4_bit
 //TRIS->JK
-#define CEREBOT_TRISJK_01_bit TRISB10_bit
-#define CEREBOT_TRISJK_02_bit TRISB11_bit
-#define CEREBOT_TRISJK_03_bit TRISB12_bit
-#define CEREBOT_TRISJK_04_bit TRISB13_bit
-#define CEREBOT_TRISJK_07_bit TRISA9_bit
-#define CEREBOT_TRISJK_08_bit TRISA10_bit
-#define CEREBOT_TRISJK_09_bit TRISD12_bit
+#define CEREBOT_TRISJK_1_bit TRISB10_bit
+#define CEREBOT_TRISJK_2_bit TRISB11_bit
+#define CEREBOT_TRISJK_3_bit TRISB12_bit
+#define CEREBOT_TRISJK_4_bit TRISB13_bit
+#define CEREBOT_TRISJK_7_bit TRISA9_bit
+#define CEREBOT_TRISJK_8_bit TRISA10_bit
+#define CEREBOT_TRISJK_9_bit TRISD12_bit
 #define CEREBOT_TRISJK_10_bit TRISC4_bit
 //LAT->JK
-#define CEREBOT_LATJK_01_bit LATB10_bit
-#define CEREBOT_LATJK_02_bit LATB11_bit
-#define CEREBOT_LATJK_03_bit LATB12_bit
-#define CEREBOT_LATJK_04_bit LATB13_bit
-#define CEREBOT_LATJK_07_bit LATA9_bit
-#define CEREBOT_LATJK_08_bit LATA10_bit
-#define CEREBOT_LATJK_09_bit LATD12_bit
+#define CEREBOT_LATJK_1_bit LATB10_bit
+#define CEREBOT_LATJK_2_bit LATB11_bit
+#define CEREBOT_LATJK_3_bit LATB12_bit
+#define CEREBOT_LATJK_4_bit LATB13_bit
+#define CEREBOT_LATJK_7_bit LATA9_bit
+#define CEREBOT_LATJK_8_bit LATA10_bit
+#define CEREBOT_LATJK_9_bit LATD12_bit
 #define CEREBOT_LATJK_10_bit LATC4_bit
 //ODC->JK
-#define CEREBOT_ODCJK_01_bit ODCB10_bit
-#define CEREBOT_ODCJK_02_bit ODCB11_bit
-#define CEREBOT_ODCJK_03_bit ODCB12_bit
-#define CEREBOT_ODCJK_04_bit ODCB13_bit
-#define CEREBOT_ODCJK_07_bit ODCA9_bit
-#define CEREBOT_ODCJK_08_bit ODCA10_bit
-#define CEREBOT_ODCJK_09_bit ODCD12_bit
+#define CEREBOT_ODCJK_1_bit ODCB10_bit
+#define CEREBOT_ODCJK_2_bit ODCB11_bit
+#define CEREBOT_ODCJK_3_bit ODCB12_bit
+#define CEREBOT_ODCJK_4_bit ODCB13_bit
+#define CEREBOT_ODCJK_7_bit ODCA9_bit
+#define CEREBOT_ODCJK_8_bit ODCA10_bit
+#define CEREBOT_ODCJK_9_bit ODCD12_bit
 #define CEREBOT_ODCJK_10_bit ODCC4_bit
-
-
-
-
-
-
