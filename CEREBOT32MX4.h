@@ -2,6 +2,8 @@
  * File         : CEREBOT32MX4.h
  * Project      : CEREBOT32MX4 Adapter
  * Revision History:
+		2017/6/26:
+			- Added Macros for LEDs-onBoard and SERVO-Pins control
 		2017/6/2:
 			- Added constants
 		2017/5/20:
