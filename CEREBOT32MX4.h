@@ -16,7 +16,8 @@
  * 				facilitar el trabajo con la placa de desarrollo 
  * 				Diligent Cerebot32MX4 (con PIC32MX460F512L)
  */
-
+#ifndef __Lib_CEREBOT32MX4
+#define __Lib_CEREBOT32MX4
  //Some useful constants
 const char Cerebot_INPUT = 1,
 		   Cerebot_OUTPUT= 0,
@@ -438,3 +439,4 @@ const char Cerebot_INPUT = 1,
 #define CEREBOT_SERVO8_LAT  CEREBOT_LATJC_10_bit
 #define CEREBOT_SERVO8_ODC  CEREBOT_ODCJC_10_bit
 
+#endif
