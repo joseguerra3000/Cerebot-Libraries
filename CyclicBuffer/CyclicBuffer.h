@@ -2,20 +2,20 @@
  * File         : CyclicBuffer.c
  * Project      : Cyclic Buffer Library
  * Revision History:
- * 		2017/06/15:
- * 			- initial release
+ *                 2017/06/15:
+ *                         - initial release
  *
  * Author       : José Guerra Carmenate 
  * 
  * Description  : This library provides you a FIFO-Buffer struct and a comfortable set of routines 
  *        to work with this Buffers
  * Routines: 
- *			- Buffer_Init
- *			- Buffer_Data_Ready
- *			- Buffer_GetData
- *			- Buffer_GetAllData
- *			- Buffer_PushData
- *			- __Buffer_Next_index
+ *                        - Buffer_Init
+ *                        - Buffer_Data_Ready
+ *                        - Buffer_GetData
+ *                        - Buffer_GetAllData
+ *                        - Buffer_PushData
+ *                        - __Buffer_Next_index
  */
 #ifndef __LibCyclicBuffer
 #define __LibCyclicBuffer
@@ -23,7 +23,7 @@
   *   Buffer Struct   *
   *********************/
 typedef struct CyclicBuffer{
-        int max_size, // Maximun Capacity
+        unsigned int max_size, // Maximun Capacity
                 front,           // index of data on the top of the buffer
                 back,           // index of the last data in the buffer
                 data_count;// quantity of data in the buffer
@@ -44,7 +44,7 @@ typedef struct CyclicBuffer{
   *                // Initialize the 'Buff1' Buffer
   *                Buffer_Init( &Buff1, *buff_arr, 256 );
   *************************************************************/
-void Buffer_Init( Buffer *buffer, unsigned char *array, int max_size );
+void Buffer_Init( Buffer *buffer, unsigned char *array, unsigned int max_size );
 
  /*************************************************************
   * Prototype: 
