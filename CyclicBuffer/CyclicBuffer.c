@@ -20,7 +20,7 @@
 #include "CyclicBuffer.h"
 void Buffer_Init( Buffer *buffer, unsigned char *array, unsigned int max_size ){
         (*buffer).buff = array;
-        (*Buffer).max_size = max_size;
+        (*buffer).max_size = max_size;
         (*buffer).front = (*buffer).back = (*buffer).data_count = 0;
 }
 
